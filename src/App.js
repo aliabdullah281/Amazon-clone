@@ -18,35 +18,25 @@ import Payment from './Payment'
 function App() {
   return (
     <Router>
-    <div className="app">
-    {/* <Header /> */}
-       <Switch>
-       
-      {/* <Routes> */}
-        <Route path='/login'>
-           <Login />
-            
-        </Route>
-        <Route path='/checkout'>
-            <Header />
-            {/* <h1> I am a checkout Page   </h1> */}
-            <Checkout />
-        </Route>
-        <Route path='/payment'>
-           <Header/>
-            <Payment/>
-        </Route>
-        <Route path='/'>
-           <Header/>
-            <Home/>
-        </Route>
-
-        
-      
-        
-       </Switch> 
-      {/* </Routes> */}
-    </div>
+        <div className="app">
+          <Switch>   
+              <Route path='/login'>
+                <Login />
+              </Route>
+              <Route path='/checkout'>
+                <Header />
+                <Checkout />
+              </Route>
+              <Route path='/payment'>
+                <Header/>
+                <Payment/>
+              </Route>
+              <Route path='/'>
+                <Header/>
+                <Home/>
+              </Route>   
+          </Switch> 
+        </div>
     </Router>
   );
 }
