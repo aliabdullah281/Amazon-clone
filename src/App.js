@@ -7,13 +7,6 @@ import Checkout from './Checkout'
 import Login from './Login'
 import Payment from './Payment'
  import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
 
 function App() {
   return (
